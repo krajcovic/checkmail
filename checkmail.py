@@ -27,7 +27,7 @@ GPIO.setup(RED_LED,GPIO.OUT)
 
 def loop(username, password):
     server = IMAPClient(HOSTNAME, use_uid=True)
-    print(username, password)
+    # print(username, password)
     server.login(username, password)
 
     if DEBUG:
